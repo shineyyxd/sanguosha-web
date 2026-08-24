@@ -1,0 +1,23 @@
+{
+  "name": "sanguosha-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "demo": "tsx packages/engine/demo/cli-demo.ts",
+    "server": "npm run dev --workspace @sanguosha/server",
+    "client": "npm run dev --workspace @sanguosha/client",
+    "play": "npm run build -w @sanguosha/client && npm run build -w @sanguosha/server && node scripts/play.mjs",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}

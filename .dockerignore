@@ -1,0 +1,16 @@
+node_modules
+**/node_modules
+**/dist
+data
+**/tests
+**/e2e
+**/smoke
+**/test-results
+**/demo
+.git
+docs
+scripts
+*.md
+Dockerfile
+docker-compose.yml
+.dockerignore

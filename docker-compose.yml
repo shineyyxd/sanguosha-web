@@ -1,0 +1,19 @@
+services:
+  sanguosha:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      DB_PATH: /data/sgs.db
+      # 询问超时（毫秒），默认 30000，超时由系统托管响应
+      # ASK_TIMEOUT_MS: "30000"
+      # 打印引擎调试日志
+      # DEBUG_ENGINE: "1"
+    volumes:
+      # SQLite 账号/战绩数据持久化
+      - sgs-data:/data
+    restart: unless-stopped
+
+volumes:
+  sgs-data:

@@ -1,0 +1,423 @@
+{
+  "source": "libnoname/noname apps/core/card/standard.js, 提取日期 2026-08-22",
+  "note": "牌堆共 108 张（含 EX 牌寒冰剑/仁王盾）。suits_distribution 为每张牌的花色点数构成（A=1, J=11, Q=12, K=13）。",
+  "cards": [
+    {
+      "id": "sha",
+      "name": "杀",
+      "type": "basic",
+      "description": "出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，否则你对其造成1点伤害。",
+      "count": 30,
+      "suits_distribution": [
+        "黑桃7",
+        "黑桃8",
+        "黑桃8",
+        "黑桃9",
+        "黑桃9",
+        "黑桃10",
+        "黑桃10",
+        "梅花2",
+        "梅花3",
+        "梅花4",
+        "梅花5",
+        "梅花6",
+        "梅花7",
+        "梅花8",
+        "梅花8",
+        "梅花9",
+        "梅花9",
+        "梅花10",
+        "梅花10",
+        "梅花11",
+        "梅花11",
+        "红桃10",
+        "红桃10",
+        "红桃11",
+        "方块6",
+        "方块7",
+        "方块8",
+        "方块9",
+        "方块10",
+        "方块13"
+      ]
+    },
+    {
+      "id": "shan",
+      "name": "闪",
+      "type": "basic",
+      "description": "抵消一张【杀】。",
+      "count": 15,
+      "suits_distribution": [
+        "红桃2",
+        "红桃2",
+        "红桃13",
+        "方块2",
+        "方块2",
+        "方块3",
+        "方块4",
+        "方块5",
+        "方块6",
+        "方块7",
+        "方块8",
+        "方块9",
+        "方块10",
+        "方块11",
+        "方块11"
+      ]
+    },
+    {
+      "id": "tao",
+      "name": "桃",
+      "type": "basic",
+      "description": "①出牌阶段，对自己使用，目标角色回复1点体力。②当有角色处于濒死状态时，对该角色使用。目标角色回复1点体力。",
+      "count": 8,
+      "suits_distribution": [
+        "红桃3",
+        "红桃4",
+        "红桃6",
+        "红桃7",
+        "红桃8",
+        "红桃9",
+        "红桃12",
+        "方块12"
+      ]
+    },
+    {
+      "id": "juedou",
+      "name": "决斗",
+      "type": "trick",
+      "description": "出牌阶段，对一名其他角色使用。由其开始，其与你轮流打出一张【杀】，直到其中一方未打出【杀】为止。未打出【杀】的一方受到另一方对其造成的1点伤害。",
+      "count": 3,
+      "suits_distribution": [
+        "黑桃1",
+        "梅花1",
+        "方块1"
+      ]
+    },
+    {
+      "id": "guohe",
+      "name": "过河拆桥",
+      "type": "trick",
+      "description": "出牌阶段，对区域里有牌的一名其他角色使用。你弃置其区域里的一张牌。",
+      "count": 6,
+      "suits_distribution": [
+        "黑桃3",
+        "黑桃4",
+        "黑桃12",
+        "梅花3",
+        "梅花4",
+        "红桃12"
+      ]
+    },
+    {
+      "id": "shunshou",
+      "name": "顺手牵羊",
+      "type": "trick",
+      "description": "出牌阶段，对距离为1且区域里有牌的一名其他角色使用。你获得其区域里的一张牌。",
+      "count": 5,
+      "suits_distribution": [
+        "黑桃3",
+        "黑桃4",
+        "黑桃11",
+        "方块3",
+        "方块4"
+      ]
+    },
+    {
+      "id": "wuzhong",
+      "name": "无中生有",
+      "type": "trick",
+      "description": "出牌阶段，对你使用。你摸两张牌。",
+      "count": 4,
+      "suits_distribution": [
+        "红桃7",
+        "红桃8",
+        "红桃9",
+        "红桃11"
+      ]
+    },
+    {
+      "id": "nanman",
+      "name": "南蛮入侵",
+      "type": "trick",
+      "description": "出牌阶段，对所有其他角色使用。每名目标角色需打出一张【杀】，否则受到1点伤害。",
+      "count": 3,
+      "suits_distribution": [
+        "黑桃7",
+        "黑桃13",
+        "梅花7"
+      ]
+    },
+    {
+      "id": "wanjian",
+      "name": "万箭齐发",
+      "type": "trick",
+      "description": "出牌阶段，对所有其他角色使用。每名目标角色需打出一张【闪】，否则受到1点伤害。",
+      "count": 1,
+      "suits_distribution": [
+        "红桃1"
+      ]
+    },
+    {
+      "id": "taoyuan",
+      "name": "桃园结义",
+      "type": "trick",
+      "description": "出牌阶段，对所有角色使用。每名目标角色回复1点体力。",
+      "count": 1,
+      "suits_distribution": [
+        "红桃1"
+      ]
+    },
+    {
+      "id": "wugu",
+      "name": "五谷丰登",
+      "type": "trick",
+      "description": "出牌阶段，对所有角色使用。（选择目标后）你从牌堆顶亮出等同于目标数量的牌，每名目标角色获得这些牌中（剩余的）的任意一张。",
+      "count": 2,
+      "suits_distribution": [
+        "红桃3",
+        "红桃4"
+      ]
+    },
+    {
+      "id": "jiedao",
+      "name": "借刀杀人",
+      "type": "trick",
+      "description": "出牌阶段，对装备区里有武器牌且有使用【杀】的目标的一名其他角色使用。令其对你指定的一名角色使用一张【杀】，否则将其装备区里的武器牌交给你。",
+      "count": 2,
+      "suits_distribution": [
+        "梅花12",
+        "梅花13"
+      ]
+    },
+    {
+      "id": "wuxie",
+      "name": "无懈可击",
+      "type": "trick",
+      "description": "一张锦囊牌生效前，对此牌使用。抵消此牌对一名角色产生的效果，或抵消另一张【无懈可击】产生的效果。",
+      "count": 4,
+      "suits_distribution": [
+        "黑桃11",
+        "梅花12",
+        "梅花13",
+        "方块12"
+      ]
+    },
+    {
+      "id": "lebu",
+      "name": "乐不思蜀",
+      "type": "trick",
+      "description": "出牌阶段，对一名其他角色使用。若判定结果不为红桃，跳过其出牌阶段。",
+      "count": 3,
+      "suits_distribution": [
+        "黑桃6",
+        "梅花6",
+        "红桃6"
+      ],
+      "subtype": "delay",
+      "note": "延时类锦囊（noname 中 type 为 delay）"
+    },
+    {
+      "id": "shandian",
+      "name": "闪电",
+      "type": "trick",
+      "description": "出牌阶段，对自己使用。若判定结果为黑桃2~9，则目标角色受到3点雷电伤害。若判定不为黑桃2~9，将之移动到下家的判定区里。",
+      "count": 2,
+      "suits_distribution": [
+        "黑桃1",
+        "红桃12"
+      ],
+      "subtype": "delay",
+      "note": "延时类锦囊（noname 中 type 为 delay）"
+    },
+    {
+      "id": "zhuge",
+      "name": "诸葛连弩",
+      "type": "equip",
+      "description": "锁定技，你于出牌阶段内使用【杀】无次数限制。",
+      "count": 2,
+      "suits_distribution": [
+        "梅花1",
+        "方块1"
+      ],
+      "subtype": "weapon"
+    },
+    {
+      "id": "cixiong",
+      "name": "雌雄双股剑",
+      "type": "equip",
+      "description": "当你使用【杀】指定一名异性的目标角色后，你可以令其选择一项：1.弃置一张手牌；2.令你摸一张牌。",
+      "count": 1,
+      "suits_distribution": [
+        "黑桃2"
+      ],
+      "subtype": "weapon"
+    },
+    {
+      "id": "qinggang",
+      "name": "青釭剑",
+      "type": "equip",
+      "description": "锁定技，当你使用【杀】指定一名目标角色后，你令其防具技能无效直到此【杀】被抵消或造成伤害。",
+      "count": 1,
+      "suits_distribution": [
+        "黑桃6"
+      ],
+      "subtype": "weapon"
+    },
+    {
+      "id": "qinglong",
+      "name": "青龙偃月刀",
+      "type": "equip",
+      "description": "当你使用的【杀】被目标角色使用的【闪】抵消时，你可以对其使用一张【杀】（无距离限制）。",
+      "count": 1,
+      "suits_distribution": [
+        "黑桃5"
+      ],
+      "subtype": "weapon"
+    },
+    {
+      "id": "zhangba",
+      "name": "丈八蛇矛",
+      "type": "equip",
+      "description": "你可以将两张手牌当【杀】使用或打出。",
+      "count": 1,
+      "suits_distribution": [
+        "黑桃12"
+      ],
+      "subtype": "weapon"
+    },
+    {
+      "id": "guanshi",
+      "name": "贯石斧",
+      "type": "equip",
+      "description": "当你使用的【杀】被目标角色使用的【闪】抵消时，你可以弃置两张牌，令此【杀】依然对其造成伤害。",
+      "count": 1,
+      "suits_distribution": [
+        "方块5"
+      ],
+      "subtype": "weapon"
+    },
+    {
+      "id": "fangtian",
+      "name": "方天画戟",
+      "type": "equip",
+      "description": "你使用的【杀】若是你最后的手牌，你可以额外选择至多两个目标。",
+      "count": 1,
+      "suits_distribution": [
+        "方块12"
+      ],
+      "subtype": "weapon"
+    },
+    {
+      "id": "qilin",
+      "name": "麒麟弓",
+      "type": "equip",
+      "description": "当你使用【杀】对目标角色造成伤害时，你可以弃置其装备区里的一张坐骑牌。",
+      "count": 1,
+      "suits_distribution": [
+        "红桃5"
+      ],
+      "subtype": "weapon"
+    },
+    {
+      "id": "hanbing",
+      "name": "寒冰剑",
+      "type": "equip",
+      "description": "当你因执行【杀】的效果而造成伤害时，若目标角色有能被弃置的牌，则你可以防止此伤害，然后依次弃置目标角色的两张牌。",
+      "count": 1,
+      "suits_distribution": [
+        "黑桃2"
+      ],
+      "subtype": "weapon"
+    },
+    {
+      "id": "bagua",
+      "name": "八卦阵",
+      "type": "equip",
+      "description": "当你需要使用或打出一张【闪】时，你可以进行判定。若结果为红色，则你视为使用或打出一张【闪】。",
+      "count": 2,
+      "suits_distribution": [
+        "黑桃2",
+        "梅花2"
+      ],
+      "subtype": "armor"
+    },
+    {
+      "id": "renwang",
+      "name": "仁王盾",
+      "type": "equip",
+      "description": "锁定技，黑色【杀】对你无效。",
+      "count": 1,
+      "suits_distribution": [
+        "梅花2"
+      ],
+      "subtype": "armor"
+    },
+    {
+      "id": "jueying",
+      "name": "绝影",
+      "type": "equip",
+      "description": "锁定技，其他角色计算与你的距离+1。",
+      "count": 1,
+      "suits_distribution": [
+        "黑桃5"
+      ],
+      "subtype": "horse_plus"
+    },
+    {
+      "id": "dilu",
+      "name": "的卢",
+      "type": "equip",
+      "description": "锁定技，其他角色计算与你的距离+1。",
+      "count": 1,
+      "suits_distribution": [
+        "梅花5"
+      ],
+      "subtype": "horse_plus"
+    },
+    {
+      "id": "zhuahuang",
+      "name": "爪黄飞电",
+      "type": "equip",
+      "description": "锁定技，其他角色计算与你的距离+1。",
+      "count": 1,
+      "suits_distribution": [
+        "红桃13"
+      ],
+      "subtype": "horse_plus"
+    },
+    {
+      "id": "chitu",
+      "name": "赤兔",
+      "type": "equip",
+      "description": "锁定技，你计算与其他角色的距离-1。",
+      "count": 1,
+      "suits_distribution": [
+        "红桃5"
+      ],
+      "subtype": "horse_minus"
+    },
+    {
+      "id": "dawan",
+      "name": "大宛",
+      "type": "equip",
+      "description": "锁定技，你计算与其他角色的距离-1。",
+      "count": 1,
+      "suits_distribution": [
+        "黑桃13"
+      ],
+      "subtype": "horse_minus"
+    },
+    {
+      "id": "zixin",
+      "name": "紫骍",
+      "type": "equip",
+      "description": "锁定技，你计算与其他角色的距离-1。",
+      "count": 1,
+      "suits_distribution": [
+        "方块13"
+      ],
+      "subtype": "horse_minus"
+    }
+  ]
+}
